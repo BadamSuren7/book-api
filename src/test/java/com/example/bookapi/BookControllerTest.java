@@ -21,7 +21,7 @@ class BookControllerTest {
     @Test
     void listsBooks() throws Exception {
         mvc.perform(get("/api/books")).andExpect(status().isOk())
-           .andExpect(jsonPath("$[0].title").value("Broken Title"));
+           .andExpect(jsonPath("$[0].title").value("Clean Code"));
     }
 
     @Test
